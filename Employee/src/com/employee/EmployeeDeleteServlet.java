@@ -24,7 +24,7 @@ public class EmployeeDeleteServlet extends HttpServlet {
 		isTrue = EmployeeDBUtil.deleteEmployee(empId);
 		
 		if (isTrue == true) {
-			RequestDispatcher dispatcher = request.getRequestDispatcher("EmployeeInsert.jsp");
+			RequestDispatcher dispatcher = request.getRequestDispatcher("EmployeeManagement.jsp");
 			dispatcher.forward(request, response);
 		}
 		else {
@@ -32,7 +32,7 @@ public class EmployeeDeleteServlet extends HttpServlet {
 			List<Employee> empDetails = EmployeeDBUtil.getEmployeeDetails(empId);
 			request.setAttribute("empDetails", empDetails);
 			
-			RequestDispatcher dispatcher = request.getRequestDispatcher("EmployeeManagement.jsp");
+			RequestDispatcher dispatcher = request.getRequestDispatcher("EmployeeDetails.jsp");
 			dispatcher.forward(request, response);
 		}
 		

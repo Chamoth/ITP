@@ -1,6 +1,8 @@
 package com.employee;
 
 import java.io.IOException;
+import java.util.List;
+
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -32,10 +34,13 @@ public class EmployeeInsert extends HttpServlet {
 		isTrue = EmployeeDBUtil.insertemployee(empId, name, age, dOB, address, phone, nic, email, jobPost);
 		
 		if(isTrue == true) {
-			RequestDispatcher dis = request.getRequestDispatcher("success.jsp");
+			List<Employee> empDetails = EmployeeDBUtil.getEmployeeDetails(empId);
+			request.setAttribute("empDetails", empDetails);
+			
+			RequestDispatcher dis = request.getRequestDispatcher("search.jsp");
 			dis.forward(request, response);
 		} else {
-			RequestDispatcher dis2 = request.getRequestDispatcher("unsuccess.jsp");
+			RequestDispatcher dis2 = request.getRequestDispatcher("unsucess.jsp");
 			dis2.forward(request, response);
 		}
 	}

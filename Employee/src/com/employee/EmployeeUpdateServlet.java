@@ -38,14 +38,14 @@ public class EmployeeUpdateServlet extends HttpServlet {
 			List<Employee> empDetails = EmployeeDBUtil.getEmployeeDetails(empId);
 			request.setAttribute("empDetails", empDetails);
 			
-			RequestDispatcher dis = request.getRequestDispatcher("EmployeeManagement.jsp");
+			RequestDispatcher dis = request.getRequestDispatcher("EmployeeDetails.jsp");
 			dis.forward(request, response);
 		}
 		else {
 			List<Employee> empDetails = EmployeeDBUtil.getEmployeeDetails(empId);
 			request.setAttribute("empDetails", empDetails);
 			
-			RequestDispatcher dis = request.getRequestDispatcher("EmployeeManagement.jsp");
+			RequestDispatcher dis = request.getRequestDispatcher("EmployeeDetails.jsp");
 			dis.forward(request, response);
 		}
 		

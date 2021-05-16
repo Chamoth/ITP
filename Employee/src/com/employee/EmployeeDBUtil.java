@@ -15,7 +15,7 @@ public class EmployeeDBUtil {
 	private static ResultSet rs = null;
 	
 	
-	public static boolean validate(String id) {
+	public static boolean vali(String id) {
 		
 		try {
 			con = DBConnect.getConnection();
@@ -36,9 +36,9 @@ public class EmployeeDBUtil {
 		return isSuccess;
 	}
 	
-	public static List<Employee> getEmployee(String id) {
+	public static List<Employee> validate(String id) {
 		
-		ArrayList<Employee> employee = new ArrayList<>();
+		ArrayList<Employee> emp = new ArrayList<>();
 		
 		try {
 			
@@ -58,15 +58,15 @@ public class EmployeeDBUtil {
 				String email = rs.getString(8);
 				String jobPost = rs.getString(9);
 				
-				Employee emp = new Employee(empId, fname, age, dOB, address, phoneNo, nIC, email, jobPost);
-				employee.add(emp);
+				Employee e = new Employee(empId, fname, age, dOB, address, phoneNo, nIC, email, jobPost);
+				emp.add(e);
 			}
 			
 		} catch (Exception e) {
 			
 		}
 		
-		return employee;	
+		return emp;	
 	}
 	
 	
@@ -124,7 +124,6 @@ public static boolean updateemployee(String empId, String fname, String age, Str
  
     public static List<Employee> getEmployeeDetails(String empId) {
     	
-    	String convertedID = (empId);
     	
     	ArrayList<Employee> emp = new ArrayList<>();
     	
@@ -132,7 +131,7 @@ public static boolean updateemployee(String empId, String fname, String age, Str
     		
     		con = DBConnect.getConnection();
     		stmt = con.createStatement();
-    		String sql = "select * from employee where Empid='"+convertedID+"'";
+    		String sql = "select * from employee where Empid='"+empId+"'";
     		rs = stmt.executeQuery(sql);
     		
     		while(rs.next()) {
@@ -160,13 +159,12 @@ public static boolean updateemployee(String empId, String fname, String age, Str
     
     public static boolean deleteEmployee(String empId) {
     	
-    	String convId = (empId);
     	
     	try {
     		
     		con = DBConnect.getConnection();
     		stmt = con.createStatement();
-    		String sql = "delete from employee where EmpID='"+convId+"'";
+    		String sql = "delete from employee where EmpID='"+empId+"'";
     		int r = stmt.executeUpdate(sql);
     		
     		if (r > 0) {

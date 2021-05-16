@@ -51,12 +51,12 @@
 			box-sizing: border-box;
 			padding: 100px 40px;
 			position: relative;  
-			  border-radius: 26px;                           
-			  width: 500px;
-			  height: 660px;
-			  margin: 5px;
-			  background: rgba(255,255,255,.18);
-			  left: -0%	
+			border-radius: 26px;                           
+			width: 500px;
+			height: 660px;
+			margin: 5px;
+			background: rgba(255,255,255,.18);
+			left: -0%	
 		}
 		
 		.button {
@@ -107,7 +107,7 @@
 <body>
 
 	<%
-		String empId = request.getParameter("empId");
+		String empId = request.getParameter("id");
 		String name = request.getParameter("fname");
 		String age = request.getParameter("age");
 		String dOB = request.getParameter("dOB");
@@ -128,7 +128,7 @@
 	<table>
 		<tr>
 			<td>Employee Identification</td> 
-			<td><input type="text" name="empId" value="<%= empId %>" readonly></td>
+			<td><input type="text" name="id" value="<%= empId %>" readonly></td>
 		</tr>
 		<tr>
 			<td>Full Name</td> 

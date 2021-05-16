@@ -43,7 +43,4 @@
 			<url-pattern>/delete</url-pattern>
 		</servlet-mapping>
 
-
-	
-
 </web-app>

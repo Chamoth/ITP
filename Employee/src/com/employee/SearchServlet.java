@@ -25,13 +25,13 @@ public class SearchServlet extends HttpServlet {
 		String id = request.getParameter("EmpID");
 		boolean isTrue;
 		
-		isTrue = EmployeeDBUtil.validate(id);
+		isTrue = EmployeeDBUtil.vali(id);
 		
 		if (isTrue == true) {
-			List<Employee> empDetails = EmployeeDBUtil.getEmployee(id);
+			List<Employee> empDetails = EmployeeDBUtil.getEmployeeDetails(id);
 			request.setAttribute("empDetails", empDetails);
 			
-			RequestDispatcher dis = request.getRequestDispatcher("EmployeeManagement.jsp");
+			RequestDispatcher dis = request.getRequestDispatcher("EmployeeDetails.jsp");
 			dis.forward(request, response);
 		} else {
 			out.println("<script type='text/javascript'>");

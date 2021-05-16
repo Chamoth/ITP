@@ -107,7 +107,7 @@
 <body>
 
 	<%
-		String empId = request.getParameter("empId");
+		String empId = request.getParameter("id");
 		String name = request.getParameter("fname");
 		String age = request.getParameter("age");
 		String dOB = request.getParameter("dOB");
@@ -120,14 +120,14 @@
 
 	<div class="a"></div>
 		<div class="header">	
-		<h2 class="c">Delete An Employee Details </h2>
+		<h2 class="c">Delete An Employee Details</h2>
 		</div>
 
 	<form class="form" action="delete" method="post">
 	<table>
 		<tr>
 			<td>Employee Identification</td> 
-			<td><input type="text" name="empId" value="<%= empId %>" readonly></td>
+			<td><input type="text" name="id" value="<%= empId %>" readonly></td>
 		</tr>
 		<tr>
 			<td>Full Name</td> 
@@ -164,9 +164,12 @@
 	</table>
 	<br>
 	<input type="submit" class="button" name="submit" value="Delete Employee">
+	<button class="button">Delete</button>
+			
+	<form method="post" action="EmployeeManagement.jsp">
+	
+	<button class="button">Cancel</button></form>
 	</form>
-
-
 
 </body>
 </html>
