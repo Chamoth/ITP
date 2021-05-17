@@ -101,6 +101,36 @@
 		table, th, td {
 		  border: 1px solid black;
 		}
+		
+		.button1 {
+			button-align: center;
+			background-color: Transparent;
+			border: 2px solid #8e44ad;
+			border-radius: 10px;
+			color: white;
+			display: block;
+			font-family: inherit;
+			font-size: 14px;
+			padding: 10px;
+			margin-top: 20px;
+			width: 17%;
+			text-align: center;
+			cursor: pointer;
+			transition: all 0.3s
+			margin: 0;
+  			position: absolute;
+  			top: 103%;
+  			left: 50%;
+  			-ms-transform: translate(-50%, -50%);
+  			transform: translate(-50%, -50%);
+		}
+		
+		.button1:hover {
+			opacity: 0.9;
+			background-color: #9400D3;
+			color: white;
+			box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+		}
 	</style>
 
 </head>
@@ -164,11 +194,11 @@
 	</table>
 	<br>
 	<input type="submit" class="button" name="submit" value="Delete Employee">
-	<button class="button">Delete</button>
-			
-	<form method="post" action="EmployeeManagement.jsp">
+	<br>		
+	</form>
 	
-	<button class="button">Cancel</button></form>
+	<form method="post" action="search.jsp">
+	<button class="button1">Cancel</button>
 	</form>
 
 </body>

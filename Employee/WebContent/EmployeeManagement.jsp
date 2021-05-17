@@ -6,6 +6,9 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Employee Management</title>
+<link href="Semantic-UI-CSS-master/semantic.css" rel="stylesheet" type="text/css" >
+<link href="bootstrap-5.0.0-beta3-dist/css/bootstrap.css" rel="stylesheet" type="text/css" >
+<script src="Semantic-UI-CSS-master/semantic.js"></script>
 
 	<style type="text/css">
 		body{
@@ -20,16 +23,19 @@
 		
 		.header{
 			color: white;
-			font-size: 20px;
 			background-color: Transparent;
+			border: 4px solid grey;
+			border-radius: 18px;
+			
 		}
 		
 		.c{	
-			font-size: 35px;
+			font-size: 40px;
+			font-family: "Trebuchet MS";
 			font-weight: bold;
-			border: 2px solid blue;
-			padding: 18px;
 			border-radius: 18px;
+			padding: 18px;
+
 		}
 		
 		
@@ -38,7 +44,6 @@
 			margin:10px;
 			width:50%; 
 		}
-		
 		
 	
 		table, th, td {
@@ -72,7 +77,54 @@
 		  color: white;
 		}
 		
-		.button {
+		.button1 {
+		  padding: 35px 35px;
+		  font-size: 24px;
+		  text-align: center;
+		  cursor: pointer;
+		  outline: none;
+		  color: #fff;
+		  background-color: Transparent;
+		  border: none;
+		  border-radius: 15px;
+		  box-shadow: 0 9px #999;
+		  margin-left: 100px; margin-right: 100px
+
+		}
+		
+		.button1:hover {background-color: #9400D3}
+		
+		.button1:active {
+		  background-color: Transparent;
+		  box-shadow: 0 5px #666;
+		  transform: translateY(4px);
+		}
+		
+		.button2 {
+		  padding: 35px 35px;
+		  font-size: 24px;
+		  text-align: center;
+		  cursor: pointer;
+		  outline: none;
+		  color: #fff;
+		  background-color: Transparent;
+		  border: none;
+		  border-radius: 15px;
+		  box-shadow: 0 9px #999;
+		  margin-left: 100px; 
+		  margin-right: 100px
+
+		}
+		
+		.button2:hover {background-color: #9400D3}
+		
+		.button2:active {
+		  background-color: Transparent;
+		  box-shadow: 0 5px #666;
+		  transform: translateY(4px);
+		}
+		
+		.button3 {
 		  padding: 35px 35px;
 		  font-size: 24px;
 		  text-align: center;
@@ -86,29 +138,49 @@
 
 		}
 		
-		.button:hover {background-color: #9400D3}
+		.button3:hover {background-color: #9400D3}
 		
-		.button:active {
+		.button3:active {
 		  background-color: Transparent;
 		  box-shadow: 0 5px #666;
 		  transform: translateY(4px);
 		}
 		
-		.d{
-			padding: 35px
+		.button4 {
+		  padding: 35px 35px;
+		  font-size: 24px;
+		  text-align: center;
+		  cursor: pointer;
+		  outline: none;
+		  color: #fff;
+		  background-color: Transparent;
+		  border: none;
+		  border-radius: 15px;
+		  box-shadow: 0 9px #999;
+
 		}
 		
-		.e{
-			padding: 35px
+		.button4:hover {background-color: #9400D3}
+		
+		.button4:active {
+		  background-color: Transparent;
+		  box-shadow: 0 5px #666;
+		  transform: translateY(4px);
 		}
 		
-		.f{
-			
-			padding: 35px
+		.tm-site-header {
+		    background-color: #F0F8FF;
+		    color: #099; 
+		    width: 400px;
+		    height: 100px; 
+		    display: flex;
+		    align-items: center;
+		    justify-content: center;
+		    margin-left: 470px;
+		    margin-top:50px;
+		    padding-bottom:10px;
+			border-radius:30px;
 		}
-		
-		
-		
 		
 	</style>
 
@@ -116,19 +188,19 @@
 </head>
 <body>
 
+	<div>
+		<div class="tm-site-header">
+		<img class="ui tiny circular image imglogo " src="img1.jfif">
+            <h1 class="tm-site-name">PizzaMania</h1>
+          </div>
+	</div>
+	
 	<div class="a"></div>
 		<div class="header">	
-		<h2 class="c"> Employee Management System</h2>
-		<div class="topnav">
-		<a class="active" href="#home">Home</a>
-		<a href = "${search}"><i class="fa fa-fw fa-search"></i> Search</a>
-		<a href="#news">News</a>
-		<a href="#contact">Contact</a>
-		<a href="#about">LogOut</a>
+		<h2 class="c">Employee Management</h2>
 	</div>
-	</div>
-		
-	
+	<br>
+	<br>
 	<div class="b">
 	<c:url value= "EmployeeInsert.jsp" var= "empinsert">
 		<c:param name="empId" value="${EmpID}"/>
@@ -141,51 +213,26 @@
 		<c:param name="email" value="${Email}"/>
 		<c:param name="jobPost" value="${JobPost}"/>
 	</c:url>
-	<div class="d">
+	<center>
 	<a href = "${empinsert}">
-	<input type = "button" class="button" name= "insert" value = "Add New Employee">
-	</a></div>
-
-	<c:url value="EmployeeUpdate.jsp" var="empupdate">
-		<c:param name="empId" value="${EmpID}"/>
-		<c:param name="fname" value="${Name}"/>
-		<c:param name="age" value="${Age}"/>
-		<c:param name="dOB" value="${DOB}"/>
-		<c:param name="address" value="${Address}"/>
-		<c:param name="phoneNo" value="${Phone}"/>
-		<c:param name="nIC" value="${NIC}"/>
-		<c:param name="email" value="${Email}"/>
-		<c:param name="jobPost" value="${JobPost}"/>
-	</c:url>
-	
-	<div class="e">
-	<a href="${empupdate}">
-	<input type="button" class="button" name="update" value="Update Employee Details">
-	</a></div>
-	
+	<input type = "button" class="button1" name= "insert" value = "Add New Employee">
+	</a>
 	<br>
-	<c:url value="EmployeeDelete.jsp" var="empdelete">
-		<c:param name="empId" value="${EmpID}"/>
-		<c:param name="fname" value="${Name}"/>
-		<c:param name="age" value="${Age}"/>
-		<c:param name="dOB" value="${DOB}"/>
-		<c:param name="address" value="${Address}"/>
-		<c:param name="phoneNo" value="${Phone}"/>
-		<c:param name="nIC" value="${NIC}"/>
-		<c:param name="email" value="${Email}"/>
-		<c:param name="jobPost" value="${JobPost}"/>
-	</c:url>
-	
-	<div class="f">
-	<a href="${empdelete}">
-	
-	<input type="button" class="button" name="delete" value="Delete Employee Details">
-	</a></div></div>
-	
-	
+	<br><br><center>
 	<form method="post" action="search.jsp">
-	<button class="btn btn1">View Employee</button>
-	</form>
+	<button class="button3">View Employee Details</button>
+	</form></center>
+	<br>
+	<br><center>
+	<form method="post" action="report.jsp">
+	<button class="button2">Generate Report</button>
+	</form></center>
+	<br>
+	<br><center>
+	<form method="post" action="Home.jsp">
+	<button class="button4">Cancel</button>
+	</form></center></div>
+	
 
 
 

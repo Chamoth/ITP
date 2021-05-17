@@ -7,16 +7,104 @@
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
 <style type="text/css">
-	body
-	{ padding:2;
+	body{ 
+	 padding:2;
 	 marging:0;
-	 background-image:url(./images/bkground.jfif);
+	 background-image:url(pizza3.jpg);
 	 background-size:cover;
 	 background-attachment:fixed;
 	}
-	h1
-	{
-	  
+	
+	
+		
+		.button {
+			button-align: center;
+			background-color: Transparent;
+			border: 2px solid #8e44ad;
+			border-radius: 10px;
+			color: white;
+			display: block;
+			font-family: inherit;
+			font-size: 14px;
+			padding: 10px;
+			margin-top: 20px;
+			width: 20%;
+			text-align: center;
+			cursor: pointer;
+			transition: all 0.3s
+			margin: 0;
+  			position: absolute;
+  			top: 122%;
+  			left: 50%;
+  			-ms-transform: translate(-50%, -50%);
+  			transform: translate(-50%, -50%);
+		}
+		
+		.button:hover {
+			opacity: 0.9;
+			background-color: #9400D3;
+			color: white;
+			box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+		}
+		
+		.button1 {
+			button-align: center;
+			background-color: Transparent;
+			border: 2px solid #8e44ad;
+			border-radius: 10px;
+			color: white;
+			display: block;
+			font-family: inherit;
+			font-size: 14px;
+			padding: 10px;
+			margin-top: 50px;
+			width: 20%;
+			text-align: center;
+			cursor: pointer;
+			transition: all 0.3s
+			margin: 0;
+  			position: absolute;
+  			top: 128%;
+  			left: 50%;
+  			-ms-transform: translate(-50%, -50%);
+  			transform: translate(-50%, -50%);
+		}
+		
+		.button1:hover {
+			opacity: 0.9;
+			background-color: #9400D3;
+			color: white;
+			box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+		}
+		
+		
+		.c{	
+			
+			font-size: 30px;
+			text-align:center;
+			font-weight: bold;
+			border: 2px solid white;
+			padding: 10px;
+			border-radius: 20px;
+			font-family: "Trebuchet MS";
+		}
+		
+		
+		.a{
+			padding: 10px 50px;
+			margin: 30px;
+			width:70%; 
+			
+		}
+		
+		
+		.header{
+			color: white;
+			font-size: 12px;
+			font-family: 'Lato', sans-serif;
+		}
+	
+	h1{ 
 	  font-size:3em;
 	  color: #003366;
 	  marging:0;
@@ -28,27 +116,17 @@
 	  left:20%;
 	  
 	 }
-	 h2{
-	 font-size:2em;
-	  color: #003366;
-	  marging:0;
-	  paddding:5;
-	  text-align:center;
-	  font-family:'arial';
-	  position: absolute;
-	  top:200px;
-	  left:40%;
 	 
-	 }
 	 img{
-	border:5px solid #6b5b95;
+		border:5px solid #6b5b95;
 	}
+	
 	 .form-table td{
-	    padding-top: 10px;
-	   background:grey;
-	   position:relative;
-	top :60px;
-	left:500px;
+	   	padding-top: 10px;
+	   	background:white;
+	   	position:relative;
+		top :60px;
+		left:500px;
 	}
 	
 	.form-lable {font-size: 20px; ; font-weight:bolder; }
@@ -58,40 +136,62 @@
 	}
 	
 	.container{
-	text-align:center;
-	margin-top:-50px;
-	margin-left: -70px;
+		text-align:center;
+		margin-top:-50px;
+		margin-left: -70px;
 	}
 	.updatebtn{
 	    width: 200px; height: 40px; border-radius: 5px; margin-left: 500px; margin-top: 100px; 
 	    color: white; font-size: 20px;  ; font-weight:bolder;
-	    background-color: grey;}
+	    background-color: grey;
+	}
+	    
 	 .deletebtn {
 	    width: 200px; height: 40px; border-radius: 5px; margin-left: 20px; margin-top: 100px; 
 	    color: white; font-size: 20px;  ; font-weight:bolder;
 	    background-color: grey;
-	    }
-	    .okbtn {
-	    width: 200px; height: 40px; border-radius: 5px; margin-left: 20px; margin-top: 100px; 
-	    color: white; font-size: 20px;  ; font-weight:bolder;
-	    background-color: grey;
-	    }
+	}
+	
+	.okbtn {
+	    button-align: center;
+			background-color: Transparent;
+			border: 2px solid #8e44ad;
+			border-radius: 10px;
+			color: white;
+			display: block;
+			font-family: inherit;
+			font-size: 14px;
+			padding: 10px;
+			margin-top: 50px;
+			width: 10%;
+			text-align: center;
+			cursor: pointer;
+			transition: all 0.3s
+			margin: 0;
+  			position: absolute;
+  			top: 140%;
+  			left: 50%;
+  			-ms-transform: translate(-50%, -50%);
+  			transform: translate(-50%, -50%);
+	}
 	    
-	.deletebtn:hover , .updatebtn:hover ,.okbtn:hover{  color: grey; background-color: white; }
+	.deletebtn:hover , .updatebtn:hover ,.okbtn:hover{  opacity: 0.9;
+			background-color: #9400D3;
+			color: white;
+			box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19); }
 
-
+		td{
+			padding: 8px 20px;
+		}
 
  </style>
 
 
 </head>
 <body>
-	<img src="img1.jfif" width="200px" height="200px"><h1>Employee Management System</h1>
-
-		<h2>Employee Details</h2>
-
-	<div class="img1">
-
+	<div class="a"></div>
+		<div class="header">	
+		<h2 class="c">Employee Details</h2>
 	</div>
 
 
@@ -99,85 +199,94 @@
 		<c:forEach var="emp" items="${empDetails}">
 
 		<c:set var="id" value="${emp.empId}"/>
-		<c:set var="name" value="${del. date}"/>
-		<c:set var="time" value="${del. time}"/>
-		<c:set var="address" value="${del. address}"/>
-		<c:set var="riderID" value="${del. riderID}"/>
-		<c:set var="vehicleNo" value="${del. vehicleNo}"/>
-		<c:set var="deliveryCharge" value="${del. deliveryCharge}"/>
+		<c:set var="fname" value="${emp.fname}"/>
+		<c:set var="age" value="${emp.age}"/>
+		<c:set var="dOB" value="${emp.dOB}"/>
+		<c:set var="address" value="${emp.address}"/>
+		<c:set var="phoneNo" value="${emp.phoneNo}"/>
+		<c:set var="nIC" value="${emp.nIC}"/>
+		<c:set var="email" value="${emp.email}"/>
+		<c:set var="jobPost" value="${emp.jobPost}"/>
 
 	<tr>
 		<td><label class="form-lable">EmpID</label></td>
 		<td class="form-input">${emp.empId }</td>
 	</tr>
 	<tr>
-		<td><label class="form-lable">Date</label></td>
-		<td class="form-input">${del. date }</td>
+		<td><label class="form-lable">Name</label></td>
+		<td class="form-input">${emp.fname}</td>
 	</tr>
 	<tr>
-		<td><label class="form-lable">Time</label></td>
-		<td class="form-input">${del. time }</td>
+		<td><label class="form-lable">Age</label></td>
+		<td class="form-input">${emp.age}</td>
+	</tr>
+	<tr>
+		<td><label class="form-lable">DOB</label></td>
+		<td class="form-input">${emp.dOB}</td>
 	</tr>
 	<tr>
 		<td><label class="form-lable">Address</label></td>
-		<td class="form-input">${del. address }</td>
+		<td class="form-input">${emp.address}</td>
 	</tr>
 	<tr>
-		<td><label class="form-lable">Rider ID</label></td>
-		<td class="form-input">${del. riderID }</td>
+		<td><label class="form-lable">Phone Number</label></td>
+		<td class="form-input">${emp.phoneNo}</td>
 	</tr>
 	<tr>
-		<td><label class="form-lable">Vehicle no</label></td>
-		<td class="form-input">${del. vehicleNo }</td>
+		<td><label class="form-lable">NIC Number</label></td>
+		<td class="form-input">${emp.nIC}</td>
 	</tr>
 	<tr>
-		<td><label class="form-lable">Delivery Charge</label></td>
-		<td class="form-input">${del. deliveryCharge }</td>
+		<td><label class="form-lable">Email Address</label></td>
+		<td class="form-input">${emp.email}</td>
+	</tr>
+	<tr>
+		<td><label class="form-lable">Job Post</label></td>
+		<td class="form-input">${emp.jobPost}</td>
 	</tr>
 	</c:forEach>
 	</table>
 
-	<c:url value="EmployeeUpdate.jsp" var="empDetails">
-		<c:param name="id" value="${EmpID}"/>
-		<c:param name="fname" value="${Name}"/>
-		<c:param name="age" value="${Age}"/>
-		<c:param name="dOB" value="${DOB}"/>
-		<c:param name="address" value="${Address}"/>
-		<c:param name="phoneNo" value="${Phone}"/>
-		<c:param name="nIC" value="${NIC}"/>
-		<c:param name="email" value="${Email}"/>
-		<c:param name="jobPost" value="${JobPost}"/>
+	<c:url value="EmployeeUpdate.jsp" var="empupdate">
+		<c:param name="id" value="${id}"/>
+		<c:param name="fname" value="${fname}"/>
+		<c:param name="age" value="${age}"/>
+		<c:param name="dOB" value="${dOB}"/>
+		<c:param name="address" value="${address}"/>
+		<c:param name="phoneNo" value="${phoneNo}"/>
+		<c:param name="nIC" value="${nIC}"/>
+		<c:param name="email" value="${email}"/>
+		<c:param name="jobPost" value="${jobPost}"/>
 	</c:url>
 	
 	<div class="e">
-	<a href="${empDetails}">
+	<a href="${empupdate}">
 	<input type="button" class="button" name="update" value="Update Employee Details">
 	</a></div>
 
 
 
 <br>
-	<c:url value="EmployeeDelete.jsp" var="empDetails">
+	<c:url value="EmployeeDelete.jsp" var="empdelete">
 		<c:param name="id" value="${id}"/>
-		<c:param name="fname" value="${Name}"/>
-		<c:param name="age" value="${Age}"/>
-		<c:param name="dOB" value="${DOB}"/>
-		<c:param name="address" value="${Address}"/>
-		<c:param name="phoneNo" value="${Phone}"/>
-		<c:param name="nIC" value="${NIC}"/>
-		<c:param name="email" value="${Email}"/>
-		<c:param name="jobPost" value="${JobPost}"/>
+		<c:param name="fname" value="${fname}"/>
+		<c:param name="age" value="${age}"/>
+		<c:param name="dOB" value="${dOB}"/>
+		<c:param name="address" value="${address}"/>
+		<c:param name="phoneNo" value="${phoneNo}"/>
+		<c:param name="nIC" value="${nIC}"/>
+		<c:param name="email" value="${email}"/>
+		<c:param name="jobPost" value="${jobPost}"/>
 	</c:url>
 	
 	<div class="f">
-	<a href="${empdelete}">
-	
-	<input type="button" class="button" name="delete" value="Delete Employee Details">
+	<a href="${empdelete}">	
+	<input type="button" class="button1" name="delete" value="Delete Employee Details">
 	</a></div>
 	
 	<div class="container">
 	<form method="post" action="EmployeeManagement.jsp">
-	<button class="okbtn">Ok</button>
+	<button class="okbtn">OK</button>
 	</form>	
 	</div>
 </body>

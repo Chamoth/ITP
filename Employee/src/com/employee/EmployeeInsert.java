@@ -37,12 +37,11 @@ public class EmployeeInsert extends HttpServlet {
 			List<Employee> empDetails = EmployeeDBUtil.getEmployeeDetails(empId);
 			request.setAttribute("empDetails", empDetails);
 			
-			RequestDispatcher dis = request.getRequestDispatcher("search.jsp");
+			RequestDispatcher dis = request.getRequestDispatcher("EmployeeDetails.jsp");
 			dis.forward(request, response);
 		} else {
-			RequestDispatcher dis2 = request.getRequestDispatcher("unsucess.jsp");
+			RequestDispatcher dis2 = request.getRequestDispatcher("unsuccess.jsp");
 			dis2.forward(request, response);
 		}
 	}
-
 }

@@ -89,6 +89,36 @@
 			box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 		}
 		
+		.button1 {
+			button-align: center;
+			background-color: Transparent;
+			border: 2px solid #8e44ad;
+			border-radius: 10px;
+			color: white;
+			display: block;
+			font-family: inherit;
+			font-size: 14px;
+			padding: 10px;
+			margin-top: 50px;
+			width: 17%;
+			text-align: center;
+			cursor: pointer;
+			transition: all 0.3s
+			margin: 0;
+  			position: absolute;
+  			top: 98%;
+  			left: 50%;
+  			-ms-transform: translate(-50%, -50%);
+  			transform: translate(-50%, -50%);
+		}
+		
+		.button1:hover {
+			opacity: 0.9;
+			background-color: #9400D3;
+			color: white;
+			box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+		}
+		
 		td{
 			padding: 8px 20px;
 		}
@@ -165,6 +195,10 @@
 	</table>
 	<br>
 	<input type="submit" class="button" name="submit" value="Update Employee Details">
+	</form>
+	
+	<form method="post" action="EmployeeManagement.jsp">
+	<button class="button1">Cancel</button>
 	</form>
 
 
