@@ -176,7 +176,8 @@ color:black;
 			
 				<td colspan="2"><input type="submit" value="Add Food"  onClick="return validate();"/> </td>
 			
-		
+				<br>
+				<br>
 			
 				<td colspan="2"><input type="reset" value="Reset" /></td>
 		
