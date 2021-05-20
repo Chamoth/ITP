@@ -11,7 +11,10 @@
 </head>
 	<style type="text/css">
 
-
+		body{
+			background-image: url('bg3.jpg');
+		}
+		
 		.button{
 		margin: 5% 45%;
 		color: white;
@@ -59,6 +62,75 @@
 			box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 		}
 		
+		#mySidenav a {
+		  position: absolute;
+		  left: -100px;
+		  transition: 0.35s;
+		  padding: 15px;
+		  text-decoration: none;
+		  font-size: 20px;
+		  color: white;
+		  border-radius: 0 5px 5px 0;
+		}
+		
+		#mySidenav a:hover {
+		  left: 0;
+		}
+		
+		#about {
+		  top: 360px;
+		  width: 120px;
+		  background-color:rgb(255,0,0);opacity:0.85;
+		}
+		
+		#blog {
+		  top: 420px;
+		  width: 140px;
+		  background-color:rgb(255,0,0);opacity:0.85;
+		}
+		
+		#projects {
+		  top: 480px;
+		  width: 160px;
+		  background-color:rgb(255,0,0);opacity:0.85;
+		}
+		
+		#contact {
+		  top: 540px;
+		  width: 200px;
+		  background-color:rgb(255,0,0);opacity:0.85;
+		}
+		
+		.button {
+			button-align: center;
+			background-color: Transparent;
+			border: 2px solid #8e44ad;
+			border-radius: 10px;
+			color: black;
+			display: block;
+			font-family: inherit;
+			font-size: 18px;
+			padding: 10px;
+			margin-top: 10px;
+			width: 20%;
+			text-align: center;
+			cursor: pointer;
+			transition: all 0.3s
+			margin: 0;
+  			position: absolute;
+  			top: 93%;
+  			left: 1%;
+  			-ms-transform: translate(-50%, -50%);
+  			transform: translate(-50%, -50%);
+		}
+		
+		.button:hover {
+			opacity: 0.9;
+			background-color: red;
+			color: white;
+			box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+		}
+		
 	</style>
 
 
@@ -85,6 +157,13 @@
 
 <body>
 
+
+	<div id="mySidenav" class="sidenav">
+		  <a href="EmployeeInsert.jsp" id="about">Add</a>
+		  <a href="search.jsp" id="blog">View</a>
+		  <a href="report.jsp" id="projects">Report</a>
+		  <a href="Home.jsp" id="contact">Back to PizzaMania</a>
+		</div>
 	
 	<div id="list">
 	<div class="img">
@@ -93,7 +172,7 @@
 	<h1 align="center"><font><strong>Employee Management System</strong></font></h1>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
 	<center><h2>Monthly Employee Report</h2>
-	<p style="width:40%; margin:0% 25%;"> Date&Time: <%=new Date().toString() %></p>
+	<p style="width:40%; margin:0% 25%;"> Date and Time: <%=new Date().toString() %></p>
 	</center>
 	<br>
 	<table align="center" cellpadding="2" cellspacing="2" border="1">
@@ -101,7 +180,7 @@
 	
 		</tr>
 		<tr bgcolor="#808080">
-		<td><b>Emp ID</b></td>
+		<td><b>Employee ID</b></td>
 		<td><b>Name</b></td>
 		<td><b>Age</b></td>
 		<td><b>Date of Birth</b></td>

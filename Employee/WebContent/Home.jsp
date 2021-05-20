@@ -51,10 +51,10 @@ h2 { margin-top: 0; }
 }
 
 .imglogo{
-  margin-left: -70px;
-  margin-right: 50px;
-  
-	}
+		  	margin-left: -5px;
+		  	margin-right: 50px;
+		  
+			}
 
 
 .tm-site-header {
@@ -65,7 +65,7 @@ h2 { margin-top: 0; }
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 470px;
+    margin-left: 550px;
     margin-top:50px;
     padding-bottom:10px;
 	border-radius:30px;
@@ -74,9 +74,10 @@ h2 { margin-top: 0; }
 .tm-site-logo { margin-right: 30px; }
 
 .tm-site-name {
-    font-size: 2.2rem;
-    font-style: italic;    
-}
+		    font-size: 3.5rem;
+		    font-style: italic;  
+		    color: red;
+		}
 
 
 .tm-site-nav-ul {
@@ -98,11 +99,12 @@ h2 { margin-top: 0; }
     align-items: center;      
     font-size: 1.2rem;
     border-radius:30px;
+    
 }
 
 .tm-page-link:hover,
 .tm-page-link.active {
-    background-color: #099;
+    background-color: red;
     color: white;
 }
 

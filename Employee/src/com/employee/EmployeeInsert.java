@@ -18,6 +18,7 @@ public class EmployeeInsert extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
+		
 		String empId = request.getParameter("empId");
 		String name = request.getParameter("fname");
 		String age = request.getParameter("age");
@@ -40,7 +41,7 @@ public class EmployeeInsert extends HttpServlet {
 			RequestDispatcher dis = request.getRequestDispatcher("EmployeeDetails.jsp");
 			dis.forward(request, response);
 		} else {
-			RequestDispatcher dis2 = request.getRequestDispatcher("unsuccess.jsp");
+			RequestDispatcher dis2 = request.getRequestDispatcher("EmployeeInsert.jsp");
 			dis2.forward(request, response);
 		}
 	}

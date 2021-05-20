@@ -13,7 +13,6 @@
 	<style type="text/css">
 		body{
 			font-family: Hind SemiBold;
-			background-image: url('pizza1.jpg');
 			height=100%;
 			background-position: center;
 			background-repeat: no-repeat;
@@ -23,18 +22,19 @@
 		
 		.header{
 			color: white;
-			background-color: Transparent;
+			background-color:rgb(255,0,0);opacity:0.8;
 			border: 4px solid grey;
 			border-radius: 18px;
 			
 		}
 		
 		.c{	
-			font-size: 40px;
+			font-size: 45px;
 			font-family: "Trebuchet MS";
 			font-weight: bold;
 			border-radius: 18px;
 			padding: 18px;
+			text-align: center;
 
 		}
 		
@@ -92,7 +92,7 @@
 
 		}
 		
-		.button1:hover {background-color: #9400D3}
+		.button1:hover {background-color: red}
 		
 		.button1:active {
 		  background-color: Transparent;
@@ -116,7 +116,7 @@
 
 		}
 		
-		.button2:hover {background-color: #9400D3}
+		.button2:hover {background-color: red}
 		
 		.button2:active {
 		  background-color: Transparent;
@@ -138,7 +138,7 @@
 
 		}
 		
-		.button3:hover {background-color: #9400D3}
+		.button3:hover {background-color: red}
 		
 		.button3:active {
 		  background-color: Transparent;
@@ -160,7 +160,7 @@
 
 		}
 		
-		.button4:hover {background-color: #9400D3}
+		.button4:hover {background-color: red}
 		
 		.button4:active {
 		  background-color: Transparent;
@@ -176,10 +176,100 @@
 		    display: flex;
 		    align-items: center;
 		    justify-content: center;
-		    margin-left: 470px;
-		    margin-top:50px;
-		    padding-bottom:10px;
+		    margin-left:36%;
+		    margin-top:100px;
+		    padding-bottom:11px;
 			border-radius:30px;
+		}
+		
+		.tm-site-logo { margin-right: 30px; }
+		
+		.imglogo{
+		  	margin-left: -5px;
+		  	margin-right: 50px;
+		  
+			}
+		
+		.tm-site-name {
+		    font-size: 3.5rem;
+		    font-style: italic;  
+		    color: red;
+		}
+		
+		#mySidenav a {
+		  position: absolute;
+		  left: -100px;
+		  transition: 0.35s;
+		  padding: 15px;
+		  text-decoration: none;
+		  font-size: 20px;
+		  color: white;
+		  border-radius: 0 5px 5px 0;
+		}
+		
+		#mySidenav a:hover {
+		  left: 0;
+		}
+		
+		#about {
+		  top: 520px;
+		  width: 120px;
+		  background-color:rgb(255,0,0);opacity:0.85;
+		}
+		
+		#blog {
+		  top: 580px;
+		  width: 140px;
+		  background-color:rgb(255,0,0);opacity:0.85;
+		}
+		
+		#projects {
+		  top: 640px;
+		  width: 160px;
+		  background-color:rgb(255,0,0);opacity:0.85;
+		}
+		
+		#contact {
+		  top: 700px;
+		  width: 210px;
+		  background-color:rgb(255,0,0);opacity:0.85;
+		}
+		
+		.bg-text {
+		  background-color: rgb(0,0,0); /* Fallback color */
+		  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+		  color: white;
+		  font-weight: bold;
+		  border: 3px solid #f1f1f1;
+		  position: absolute;
+		  top: 50%;
+		  left: 50%;
+		  transform: translate(-50%, -50%);
+		  z-index: 2;
+		  width: 100%;
+		  padding: 20px;
+		  text-align: center;
+		}
+		
+		* {
+		  box-sizing: border-box;
+		}
+		
+		.bg-image {
+		  /* The image used */
+		  background-image: url('pizza1.jpg');
+		  
+		  /* Add the blur effect */
+		  filter: blur(9px);
+		  -webkit-filter: blur(3px);
+		  
+		  /* Full height */
+		  height: 100%; 
+		  
+		  /* Center and scale the image nicely */
+		  background-position: center;
+		  background-repeat: no-repeat;
+		  background-size: cover;
 		}
 		
 	</style>
@@ -188,6 +278,8 @@
 </head>
 <body>
 
+	<div class="bg-image"></div>
+	<div class="bg-text">
 	<div>
 		<div class="tm-site-header">
 		<img class="ui tiny circular image imglogo " src="img1.jfif">
@@ -199,6 +291,16 @@
 		<div class="header">	
 		<h2 class="c">Employee Management</h2>
 	</div>
+	<br>
+	<br>
+	
+	<div id="mySidenav" class="sidenav">
+	  <a href="EmployeeInsert.jsp" id="about">Add</a>
+	  <a href="search.jsp" id="blog">View</a>
+	  <a href="report.jsp" id="projects">Report</a>
+	  <a href="Home.jsp" id="contact">Back to PizzaMania</a>
+	</div>
+	
 	<br>
 	<br>
 	<div class="b">
@@ -213,26 +315,27 @@
 		<c:param name="email" value="${Email}"/>
 		<c:param name="jobPost" value="${JobPost}"/>
 	</c:url>
-	<center>
+	
+	<div class="button">
 	<a href = "${empinsert}">
 	<input type = "button" class="button1" name= "insert" value = "Add New Employee">
 	</a>
 	<br>
-	<br><br><center>
+	<br><br>
 	<form method="post" action="search.jsp">
 	<button class="button3">View Employee Details</button>
-	</form></center>
+	</form>
 	<br>
-	<br><center>
+	<br>
 	<form method="post" action="report.jsp">
 	<button class="button2">Generate Report</button>
-	</form></center>
+	</form>
 	<br>
-	<br><center>
+	<br>
 	<form method="post" action="Home.jsp">
 	<button class="button4">Cancel</button>
-	</form></center></div>
-	
+	</form></div></div>
+	</div>
 
 
 
