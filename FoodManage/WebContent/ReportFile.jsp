@@ -32,6 +32,10 @@ ResultSet resultSet = null;
 
 <style type = "text/css">
 
+h1 {
+  text-align: center;
+}
+
 body{
 background-image:url('bg7.jpeg');
 background-attachment:fixed;
@@ -66,7 +70,7 @@ background-size:cover;
 					
 		<div id="list">	
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
-				<h1 class="col-md-8 title2">Download the Report of the Food Catalogue</h1>
+				<h1 class="col-md-8 title2">The Report of the Food Catalogue</h1>
 			
 				<table  class="ui selectable singel line table tblS">
 				<thead>
@@ -108,8 +112,8 @@ background-size:cover;
 			<br>
 				<div class="container">
   			<div class="vertical-center">
-			<a href = "ReportFile.jsp"> <button class="ui btn right floated labeled icon button"  >
-					Download Report<i class="download icon"></i></button></a>
+			 <button class="ui btn right floated labeled icon button" onclick = "print()"  >
+					Download Report<i class="download icon"></i></button>
 			</div>
 			</div>
 

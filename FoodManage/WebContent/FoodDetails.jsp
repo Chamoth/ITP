@@ -29,7 +29,6 @@ ResultSet resultSet = null;
 <link href="Semantic-UI-CSS-master/semantic.css" rel="stylesheet" type="text/css" >
 <link href="Main.css" rel="stylesheet" type="text/css" >
 <script src="Semantic-UI-CSS-master/semantic.js"></script>
-
 <style type = "text/css">
 
 body{

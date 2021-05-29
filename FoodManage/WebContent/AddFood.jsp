@@ -30,7 +30,7 @@ color:black;
 	/*background-color: #00FF00;*/ /* blue */
    /* color: white;
     width: 25%;
-    padding: 8px 100px;
+    padding: 8px 10px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -44,6 +44,12 @@ color:black;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+  margin: 0;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
  </style>
