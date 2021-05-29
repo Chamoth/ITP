@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+<servlet>
+<servlet-name>ShowServlet</servlet-name>
+<servlet-class>com.ShowServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>ShowServlet</servlet-name>
+<url-pattern>/ShowServlet</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+<servlet-name>InsertDelServlet</servlet-name>
+<servlet-class>com.InsertDelServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>InsertDelServlet</servlet-name>
+<url-pattern>/InsertDelServlet</url-pattern>
+</servlet-mapping>
+
+<servlet>
+<servlet-name>UpdateDelServlet</servlet-name>
+<servlet-class>com.UpdateDelServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>UpdateDelServlet</servlet-name>
+<url-pattern>/UpdateDelServlet</url-pattern>
+</servlet-mapping>
+
+<servlet>
+<servlet-name>DeleteDelServlet</servlet-name>
+<servlet-class>com.DeleteDelServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>DeleteDelServlet</servlet-name>
+<url-pattern>/DeleteDelServlet</url-pattern>
+</servlet-mapping>
+
+
+</web-app>
