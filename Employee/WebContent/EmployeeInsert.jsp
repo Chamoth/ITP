@@ -125,6 +125,7 @@
 			font-size: 18px
 		}
 		
+
 		input[type=tel]{
 			width: 100%;
 			padding: 12px 20px;
@@ -132,7 +133,7 @@
 			box-sizing: border-box;
 			font-size: 18px
 		}
-		
+  
 		.button {
 			button-align: center;
 			background-color: Transparent;
@@ -251,6 +252,7 @@
 		<tr>
 			<td>Phone Number</td> 
 			<td> <input type="tel" placeholder="xxxxxxxxxx" name="phoneNo" pattern="[0-9]{3}[0-9]{3}[0-9]{4}"></td>
+			<td> <input type="number" name="phoneNo"></td>
 		</tr>
 		<tr>
 			<td>NIC</td> 
