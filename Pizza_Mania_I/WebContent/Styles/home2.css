@@ -1,0 +1,108 @@
+@charset "ISO-8859-1";
+
+html { scroll-behavior: smooth; }
+
+body {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-size: 18px;
+background-image: url("../Images/bg2.jpeg");
+background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+.btnL{
+	margin-right:30px;	
+}
+
+ul {
+    padding:0;
+    margin-left: 100px; margin-right: 100px
+}
+
+nav > ul > li { list-style: none; }
+
+a { 
+	color: #3CF;
+    text-decoration: none;
+    transition: all 0.3s ease; 
+}
+
+p { 
+    line-height: 1.8; 
+    margin-top: 0;
+}
+
+h2 { margin-top: 0; }
+
+.tm-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.imglogo{
+  margin-left: -70px;
+  margin-right: 50px;
+  
+	}
+
+
+.tm-site-header {
+    background-color: #F0F8FF;
+    color: #099; 
+    width: 400px;
+    height: 100px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 500px;
+    margin-top:50px;
+	border-radius:30px;
+}
+
+.tm-site-logo { margin-right: 30px; }
+
+.tm-site-name {
+    font-size: 2.2rem;
+    font-style: italic;    
+}
+
+
+.tm-site-nav-ul {
+	
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.tm-page-nav-item { margin-top: 20px; }
+
+.tm-page-link {
+    min-width: 350px;
+    height: 100px;
+    background-color: white;
+    color: #099;
+    display: flex;
+    text-decoration: none;
+    align-items: center;      
+    font-size: 1.2rem;
+    border-radius:30px;
+}
+
+.tm-page-link:hover,
+.tm-page-link.active {
+    background-color: #099;
+    color: white;
+}
+
+.tm-page-link-icon {
+    margin-right: 25px;
+    margin-left: 25px;
+    font-size: 1.5rem;
+}
+
+.tm-black-bg {
+    background-color: rgba(0,0,0,0.6);
+    color: white;
+}
+

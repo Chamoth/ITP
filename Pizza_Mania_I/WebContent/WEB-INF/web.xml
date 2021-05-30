@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>Pizza_Mania_I</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+ <!-- Add new sup -->
+  <servlet>
+		<servlet-name>addnewsupplierservlet</servlet-name>
+		<servlet-class>supplier_management.AddNewSupplierServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>addnewsupplierservlet</servlet-name>
+		<url-pattern>/addnewsupplier</url-pattern>
+	</servlet-mapping>
+	
+	
+	<!-- delete existing supplier -->
+  <servlet>
+		<servlet-name>deletefsservlet</servlet-name>
+		<servlet-class>supplier_management.DeleteFSServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>deletefsservlet</servlet-name>
+		<url-pattern>/deletefs</url-pattern>
+	</servlet-mapping>
+	
+	<!-- update existing suppliers -->
+  <servlet>
+		<servlet-name>updatefsservlet</servlet-name>
+		<servlet-class>supplier_management.UpdateFSServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>updatefsservlet</servlet-name>
+		<url-pattern>/updatefs</url-pattern>
+	</servlet-mapping>
+  
+  
+</web-app>
