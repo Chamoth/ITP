@@ -252,7 +252,6 @@
 		<tr>
 			<td>Phone Number</td> 
 			<td> <input type="tel" placeholder="xxxxxxxxxx" name="phoneNo" pattern="[0-9]{3}[0-9]{3}[0-9]{4}"></td>
-			<td> <input type="number" name="phoneNo"></td>
 		</tr>
 		<tr>
 			<td>NIC</td> 

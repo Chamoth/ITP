@@ -288,8 +288,6 @@
 		<tr>
 			<td>Phone Number</td> 
 			<td><input type="tel" name="phoneNo" placeholder="xxxxxxxxxx" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" value="<%= phone %>" ></td>
-			<td><input type="number" name="phoneNo" value="<%= phone %>" ></td>
-
 		</tr>
 		<tr>
 			<td>NIC</td> 
